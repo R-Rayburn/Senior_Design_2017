@@ -22,19 +22,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discovery Park of America" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1s3-gR-9Vz">
-                                <rect key="frame" x="86.5" y="201" width="202" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1428860794" translatesAutoresizingMaskIntoConstraints="NO" id="Y7Q-gT-uDy">
+                                <rect key="frame" x="33" y="129" width="308" height="297"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1s3-gR-9Vz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70.5" id="AdU-K1-M3G"/>
-                            <constraint firstItem="1s3-gR-9Vz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c1Q-R9-B3I"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1s3-gR-9Vz" secondAttribute="trailing" constant="70.5" id="hAj-jP-Aso"/>
-                            <constraint firstItem="1s3-gR-9Vz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="181" id="tBf-8L-9G4"/>
+                            <constraint firstItem="Y7Q-gT-uDy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="1ID-Yy-uC1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y7Q-gT-uDy" secondAttribute="trailing" constant="18" id="9mk-Yc-tmZ"/>
+                            <constraint firstItem="Y7Q-gT-uDy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="109" id="ybS-pk-xpV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Y7Q-gT-uDy" secondAttribute="bottom" constant="241" id="zdi-x2-cZC"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -42,4 +39,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="1428860794" width="241" height="201"/>
+    </resources>
 </document>
