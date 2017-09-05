@@ -14,6 +14,7 @@
 		944593D11F5A05AF000B7FE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944593CF1F5A05AF000B7FE6 /* LaunchScreen.storyboard */; };
 		944593DC1F5A05AF000B7FE6 /* Discovery_Park_of_AmericaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944593DB1F5A05AF000B7FE6 /* Discovery_Park_of_AmericaTests.swift */; };
 		944593E71F5A05AF000B7FE6 /* Discovery_Park_of_AmericaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944593E61F5A05AF000B7FE6 /* Discovery_Park_of_AmericaUITests.swift */; };
+		94C42BE31F5F437400736AC6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C42BE21F5F437400736AC6 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		944593E21F5A05AF000B7FE6 /* Discovery Park of AmericaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Discovery Park of AmericaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		944593E61F5A05AF000B7FE6 /* Discovery_Park_of_AmericaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovery_Park_of_AmericaUITests.swift; sourceTree = "<group>"; };
 		944593E81F5A05AF000B7FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94C42BE21F5F437400736AC6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C42BE31F5F437400736AC6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				944593DA1F5A05AF000B7FE6 /* Discovery Park of AmericaTests */,
 				944593E51F5A05AF000B7FE6 /* Discovery Park of AmericaUITests */,
 				944593C41F5A05AF000B7FE6 /* Products */,
+				94C42BE11F5F437400736AC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				944593E81F5A05AF000B7FE6 /* Info.plist */,
 			);
 			path = "Discovery Park of AmericaUITests";
+			sourceTree = "<group>";
+		};
+		94C42BE11F5F437400736AC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94C42BE21F5F437400736AC6 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,6 +528,7 @@
 				944593ED1F5A05AF000B7FE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		944593EE1F5A05AF000B7FE6 /* Build configuration list for PBXNativeTarget "Discovery Park of AmericaTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +537,7 @@
 				944593F01F5A05AF000B7FE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		944593F11F5A05AF000B7FE6 /* Build configuration list for PBXNativeTarget "Discovery Park of AmericaUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +546,7 @@
 				944593F31F5A05AF000B7FE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
