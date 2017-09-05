@@ -42,11 +42,7 @@
         <!--Map-->
         <scene sceneID="b3Q-ai-Ye8">
             <objects>
-                <viewController id="W07-fy-WpA" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="XFt-bk-bBO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
+                <viewController id="W07-fy-WpA" customClass="MapViewController" customModule="Discovery_Park_of_America" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" id="DzQ-oA-mtR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxi-89-q9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -59,17 +55,38 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="U2i-K2-3VV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="25T-sU-zFG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="POg-Zj-YX8"/>
                         <segue destination="W07-fy-WpA" kind="relationship" relationship="viewControllers" id="5kr-oc-Oes"/>
+                        <segue destination="AoI-Fh-JlE" kind="relationship" relationship="viewControllers" id="45p-kL-fQa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2H-Pq-ZSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="818.39999999999998" y="40.929535232383813"/>
+        </scene>
+        <!--Web-->
+        <scene sceneID="Gcr-Fl-bp7">
+            <objects>
+                <viewController id="AoI-Fh-JlE" customClass="WebViewController" customModule="Discovery_Park_of_America" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GNt-sI-IbJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="4rO-UM-coV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s86-ow-ZPR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Web" id="kUz-fb-qzp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZbQ-QR-Rgz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818" y="843"/>
         </scene>
     </scenes>
     <resources>
