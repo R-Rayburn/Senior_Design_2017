@@ -15,6 +15,7 @@
 		944593DC1F5A05AF000B7FE6 /* Discovery_Park_of_AmericaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944593DB1F5A05AF000B7FE6 /* Discovery_Park_of_AmericaTests.swift */; };
 		944593E71F5A05AF000B7FE6 /* Discovery_Park_of_AmericaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944593E61F5A05AF000B7FE6 /* Discovery_Park_of_AmericaUITests.swift */; };
 		94C42BE31F5F437400736AC6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C42BE21F5F437400736AC6 /* MapKit.framework */; };
+		94C42BE51F5F479800736AC6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C42BE41F5F479800736AC6 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		944593E61F5A05AF000B7FE6 /* Discovery_Park_of_AmericaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovery_Park_of_AmericaUITests.swift; sourceTree = "<group>"; };
 		944593E81F5A05AF000B7FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C42BE21F5F437400736AC6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		94C42BE41F5F479800736AC6 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				944593C61F5A05AF000B7FE6 /* AppDelegate.swift */,
 				944593C81F5A05AF000B7FE6 /* ViewController.swift */,
+				94C42BE41F5F479800736AC6 /* MapViewController.swift */,
 				944593CA1F5A05AF000B7FE6 /* Main.storyboard */,
 				944593CD1F5A05AF000B7FE6 /* Assets.xcassets */,
 				944593CF1F5A05AF000B7FE6 /* LaunchScreen.storyboard */,
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				944593C91F5A05AF000B7FE6 /* ViewController.swift in Sources */,
+				94C42BE51F5F479800736AC6 /* MapViewController.swift in Sources */,
 				944593C71F5A05AF000B7FE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
