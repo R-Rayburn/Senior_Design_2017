@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Discovery_Park_of_America" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,21 +23,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1428860794" translatesAutoresizingMaskIntoConstraints="NO" id="Y7Q-gT-uDy">
-                                <rect key="frame" x="33" y="129" width="308" height="248"/>
+                                <rect key="frame" x="33" y="99" width="308" height="278"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="278" id="6wC-Qk-U7P"/>
+                                    <constraint firstAttribute="width" constant="308" id="I6u-0X-pc5"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W05-GH-HDq">
+                                <rect key="frame" x="109" y="385" width="157" height="30"/>
+                                <state key="normal" title="See exhibit description"/>
+                                <connections>
+                                    <segue destination="dym-Si-rtc" kind="show" identifier="showDescription" id="7pz-e7-IfK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Y7Q-gT-uDy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="1ID-Yy-uC1"/>
+                            <constraint firstItem="W05-GH-HDq" firstAttribute="centerX" secondItem="Y7Q-gT-uDy" secondAttribute="centerX" id="6i3-Uk-hXn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Y7Q-gT-uDy" secondAttribute="trailing" constant="18" id="9mk-Yc-tmZ"/>
-                            <constraint firstItem="Y7Q-gT-uDy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="109" id="ybS-pk-xpV"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Y7Q-gT-uDy" secondAttribute="bottom" constant="241" id="zdi-x2-cZC"/>
+                            <constraint firstItem="Y7Q-gT-uDy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="AGx-49-sxH"/>
+                            <constraint firstItem="W05-GH-HDq" firstAttribute="top" secondItem="Y7Q-gT-uDy" secondAttribute="bottom" constant="8" id="jYB-bb-elP"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Main" id="R7l-lP-gJo"/>
+                    <navigationItem key="navigationItem" id="QcR-ZM-zx2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="972" y="40.929535232383813"/>
         </scene>
         <!--Map-->
         <scene sceneID="b3Q-ai-Ye8">
@@ -47,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxi-89-q9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1757.5999999999999" y="40.929535232383813"/>
+            <point key="canvasLocation" x="2696.8000000000002" y="40.929535232383813"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="EQI-zz-yq4">
@@ -60,14 +73,49 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="POg-Zj-YX8"/>
+                        <segue destination="yPo-jR-S2o" kind="relationship" relationship="viewControllers" id="POg-Zj-YX8"/>
                         <segue destination="W07-fy-WpA" kind="relationship" relationship="viewControllers" id="5kr-oc-Oes"/>
                         <segue destination="AoI-Fh-JlE" kind="relationship" relationship="viewControllers" id="45p-kL-fQa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2H-Pq-ZSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818.39999999999998" y="40.929535232383813"/>
+            <point key="canvasLocation" x="1757.5999999999999" y="40.929535232383813"/>
+        </scene>
+        <!--Description View Controller-->
+        <scene sceneID="ENv-cF-ODA">
+            <objects>
+                <viewController id="dym-Si-rtc" customClass="DescriptionViewController" customModule="Discovery_Park_of_America" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UyP-re-xd6"/>
+                        <viewControllerLayoutGuide type="bottom" id="9nK-2d-298"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sue-UI-OFU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xl-k5-EoL">
+                                <rect key="frame" x="166" y="100" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u1B-TG-49h">
+                                <rect key="frame" x="33" y="129" width="307" height="264"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFq-Ni-i0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-266.39999999999998" y="698.5007496251875"/>
         </scene>
         <!--Web-->
         <scene sceneID="Gcr-Fl-bp7">
@@ -87,6 +135,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZbQ-QR-Rgz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="818" y="843"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="ZcX-C6-6c0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yPo-jR-S2o" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Main" id="R7l-lP-gJo"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pfM-6p-5lX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="09O-gx-AfM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Pb-PS-zUY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-630" y="21"/>
         </scene>
     </scenes>
     <resources>
