@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		944593C71F5A05AF000B7FE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944593C61F5A05AF000B7FE6 /* AppDelegate.swift */; };
-		944593C91F5A05AF000B7FE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944593C81F5A05AF000B7FE6 /* ViewController.swift */; };
 		944593CC1F5A05AF000B7FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944593CA1F5A05AF000B7FE6 /* Main.storyboard */; };
 		944593CE1F5A05AF000B7FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944593CD1F5A05AF000B7FE6 /* Assets.xcassets */; };
 		944593D11F5A05AF000B7FE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944593CF1F5A05AF000B7FE6 /* LaunchScreen.storyboard */; };
 		944593DC1F5A05AF000B7FE6 /* Discovery_Park_of_AmericaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944593DB1F5A05AF000B7FE6 /* Discovery_Park_of_AmericaTests.swift */; };
 		944593E71F5A05AF000B7FE6 /* Discovery_Park_of_AmericaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944593E61F5A05AF000B7FE6 /* Discovery_Park_of_AmericaUITests.swift */; };
 		94B5BD7E1F62EF800015AB33 /* DescriptionView Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B5BD7D1F62EF800015AB33 /* DescriptionView Controller.swift */; };
+		94BA06551F6C249100822402 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA06541F6C249100822402 /* LibraryViewController.swift */; };
+		94BA06591F6C25DE00822402 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA06581F6C25DE00822402 /* Item.swift */; };
+		94BA065B1F6C278C00822402 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA065A1F6C278C00822402 /* ItemStore.swift */; };
 		94C42BE31F5F437400736AC6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C42BE21F5F437400736AC6 /* MapKit.framework */; };
 		94C42BE51F5F479800736AC6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C42BE41F5F479800736AC6 /* MapViewController.swift */; };
 		94C42BE71F5F4B3300736AC6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C42BE61F5F4B3300736AC6 /* WebViewController.swift */; };
@@ -40,7 +42,6 @@
 /* Begin PBXFileReference section */
 		944593C31F5A05AF000B7FE6 /* Discovery Park of America.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Discovery Park of America.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		944593C61F5A05AF000B7FE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		944593C81F5A05AF000B7FE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		944593CB1F5A05AF000B7FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		944593CD1F5A05AF000B7FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		944593D01F5A05AF000B7FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +53,9 @@
 		944593E61F5A05AF000B7FE6 /* Discovery_Park_of_AmericaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovery_Park_of_AmericaUITests.swift; sourceTree = "<group>"; };
 		944593E81F5A05AF000B7FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94B5BD7D1F62EF800015AB33 /* DescriptionView Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DescriptionView Controller.swift"; sourceTree = "<group>"; };
+		94BA06541F6C249100822402 /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibraryViewController.swift; path = ../LibraryViewController.swift; sourceTree = "<group>"; };
+		94BA06581F6C25DE00822402 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
+		94BA065A1F6C278C00822402 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		94C42BE21F5F437400736AC6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		94C42BE41F5F479800736AC6 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 		94C42BE61F5F4B3300736AC6 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -108,10 +112,12 @@
 			isa = PBXGroup;
 			children = (
 				944593C61F5A05AF000B7FE6 /* AppDelegate.swift */,
-				944593C81F5A05AF000B7FE6 /* ViewController.swift */,
 				94C42BE41F5F479800736AC6 /* MapViewController.swift */,
 				94C42BE61F5F4B3300736AC6 /* WebViewController.swift */,
 				94B5BD7D1F62EF800015AB33 /* DescriptionView Controller.swift */,
+				94BA06541F6C249100822402 /* LibraryViewController.swift */,
+				94BA06581F6C25DE00822402 /* Item.swift */,
+				94BA065A1F6C278C00822402 /* ItemStore.swift */,
 				944593CA1F5A05AF000B7FE6 /* Main.storyboard */,
 				944593CD1F5A05AF000B7FE6 /* Assets.xcassets */,
 				944593CF1F5A05AF000B7FE6 /* LaunchScreen.storyboard */,
@@ -284,9 +290,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				94B5BD7E1F62EF800015AB33 /* DescriptionView Controller.swift in Sources */,
-				944593C91F5A05AF000B7FE6 /* ViewController.swift in Sources */,
 				94C42BE51F5F479800736AC6 /* MapViewController.swift in Sources */,
 				944593C71F5A05AF000B7FE6 /* AppDelegate.swift in Sources */,
+				94BA06591F6C25DE00822402 /* Item.swift in Sources */,
+				94BA06551F6C249100822402 /* LibraryViewController.swift in Sources */,
+				94BA065B1F6C278C00822402 /* ItemStore.swift in Sources */,
 				94C42BE71F5F4B3300736AC6 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
