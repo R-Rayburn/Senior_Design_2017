@@ -10,6 +10,7 @@ import UIKit
 
 class Item: NSObject {
     var name: String
+    var info: String
     
 //    init(name: String){
 //        self.name = name
@@ -19,5 +20,9 @@ class Item: NSObject {
     
     override init() {
         self.name = "Exhibit"
+        self.info = "This is the desciption for the exhibit. " +
+                    "It will show up in paragraph form here before the name. " +
+                    "We will eventually format this area to contain a picture or some other design. "
+        
     }
 }

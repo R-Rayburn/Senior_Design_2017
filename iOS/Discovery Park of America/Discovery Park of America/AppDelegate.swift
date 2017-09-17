@@ -21,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let tabController = window!.rootViewController as! UITabBarController
 
-        let libraryController = tabController.viewControllers?[0] as! LibraryViewController
+        let navController = tabController.viewControllers?[0] as! UINavigationController
+        let libraryController = navController.topViewController as! LibraryViewController
         libraryController.itemStore = itemStore
         
         return true

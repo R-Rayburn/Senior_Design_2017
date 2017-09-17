@@ -31,4 +31,19 @@ class LibraryViewController: UITableViewController {
         
         return cell
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "showInfo"?:
+            if let row = tableView.indexPathForSelectedRow?.row {
+                
+                // Get the item associated with this row and pass it along
+                let item = itemStore.allItems[row]
+                let descriptionViewController = segue.destination as! DescriptionViewController
+                descriptionViewController.item = item
+            }
+        default:
+            preconditionFailure("Unexpected segue identifier.")
+        }
+    }
 }
