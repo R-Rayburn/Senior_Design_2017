@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		944593C71F5A05AF000B7FE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944593C61F5A05AF000B7FE6 /* AppDelegate.swift */; };
 		944593CC1F5A05AF000B7FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944593CA1F5A05AF000B7FE6 /* Main.storyboard */; };
-		944593CE1F5A05AF000B7FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944593CD1F5A05AF000B7FE6 /* Assets.xcassets */; };
 		944593D11F5A05AF000B7FE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944593CF1F5A05AF000B7FE6 /* LaunchScreen.storyboard */; };
 		944593DC1F5A05AF000B7FE6 /* Discovery_Park_of_AmericaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944593DB1F5A05AF000B7FE6 /* Discovery_Park_of_AmericaTests.swift */; };
 		944593E71F5A05AF000B7FE6 /* Discovery_Park_of_AmericaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944593E61F5A05AF000B7FE6 /* Discovery_Park_of_AmericaUITests.swift */; };
@@ -20,6 +19,7 @@
 		94C42BE31F5F437400736AC6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C42BE21F5F437400736AC6 /* MapKit.framework */; };
 		94C42BE51F5F479800736AC6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C42BE41F5F479800736AC6 /* MapViewController.swift */; };
 		94C42BE71F5F4B3300736AC6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C42BE61F5F4B3300736AC6 /* WebViewController.swift */; };
+		94C9BD771F6F13670053655F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C9BD761F6F13670053655F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 		944593C31F5A05AF000B7FE6 /* Discovery Park of America.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Discovery Park of America.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		944593C61F5A05AF000B7FE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		944593CB1F5A05AF000B7FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		944593CD1F5A05AF000B7FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		944593D01F5A05AF000B7FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		944593D21F5A05AF000B7FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		944593D71F5A05AF000B7FE6 /* Discovery Park of AmericaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Discovery Park of AmericaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +58,7 @@
 		94C42BE21F5F437400736AC6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		94C42BE41F5F479800736AC6 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 		94C42BE61F5F4B3300736AC6 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		94C9BD761F6F13670053655F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 				94BA06581F6C25DE00822402 /* Item.swift */,
 				94BA065A1F6C278C00822402 /* ItemStore.swift */,
 				944593CA1F5A05AF000B7FE6 /* Main.storyboard */,
-				944593CD1F5A05AF000B7FE6 /* Assets.xcassets */,
+				94C9BD761F6F13670053655F /* Assets.xcassets */,
 				944593CF1F5A05AF000B7FE6 /* LaunchScreen.storyboard */,
 				944593D21F5A05AF000B7FE6 /* Info.plist */,
 			);
@@ -263,7 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				944593D11F5A05AF000B7FE6 /* LaunchScreen.storyboard in Resources */,
-				944593CE1F5A05AF000B7FE6 /* Assets.xcassets in Resources */,
+				94C9BD771F6F13670053655F /* Assets.xcassets in Resources */,
 				944593CC1F5A05AF000B7FE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

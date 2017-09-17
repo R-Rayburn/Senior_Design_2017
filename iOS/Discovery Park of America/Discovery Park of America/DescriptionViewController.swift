@@ -18,7 +18,7 @@ class DescriptionViewController: UIViewController {
         super.viewWillAppear(animated)
         
         //print(item.name)
-        
+                
         nameLabel.text = item.name
         infoText.text = item.info
     }

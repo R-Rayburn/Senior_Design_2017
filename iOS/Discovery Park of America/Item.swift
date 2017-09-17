@@ -12,11 +12,12 @@ class Item: NSObject {
     var name: String
     var info: String
     
-//    init(name: String){
-//        self.name = name
-//        
-//        super.init()
-//    }
+    init(name: String, info: String){
+        self.name = name
+        self.info = info
+        
+        super.init()
+    }
     
     override init() {
         self.name = "Exhibit"
