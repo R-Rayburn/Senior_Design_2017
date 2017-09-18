@@ -14,11 +14,9 @@ class ItemStore {
     var arrayClients = [[String:String]]() // do not use NSMutableArray in Swift
     var dictClients = [String:String]()
     
-    @discardableResult func createItem() -> Item {
-        //print("here")
-        //let file = "test.rtf"
+    @discardableResult func createItem(filename: String) -> Item {
         var fileString = [String]()
-        if let asset = NSDataAsset(name: "test") {
+        if let asset = NSDataAsset(name: filename) {
             let data = asset.data
             
             // From https://stackoverflow.com/questions/41822966/how-do-you-read-data-from-a-text-file-in-swift-3-xcode-8
@@ -30,10 +28,6 @@ class ItemStore {
                 for line in readings {
                     let clientData = line.components(separatedBy: "\n")
                     fileString.append(clientData[0])
-                    //print(clientData[0])
-                    //print(clientData)
-                    //dictClients["FirstName"] = "\(clientData)"
-                    //arrayClients.append(dictClients)
                 }
             } catch {
                 print("Data not accessed.")
@@ -41,18 +35,6 @@ class ItemStore {
         } else {
             print("fail")
         }
-        //        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-        //            let path = dir.appendingPathComponent(file)
-        //            print (path)
-        //
-        //            do {
-        //                let text = try String(contentsOf: path, encoding: String.Encoding.utf8)
-        //                print(text)
-        //                print("success")
-        //            } catch {
-        //                print("File not opened.")
-        //            }
-        //        }
         
         let newItem = Item(name: fileString[0], info: fileString[1])
         
@@ -62,9 +44,30 @@ class ItemStore {
     }
     
     init() {
-        for _ in 0..<15 {
-            createItem()
-            //print("here")
+        var fileString = [String]()
+        if let asset = NSDataAsset(name: "FileNames") {
+            let data = asset.data
+            do {
+                let attibutedString = try NSAttributedString(data: data, documentAttributes: nil)
+                
+                let fullText = attibutedString.string
+                let readings = fullText.components(separatedBy: CharacterSet.newlines)
+                for line in readings {
+                    let clientData = line.components(separatedBy: "\n")
+                    fileString.append(clientData[0])
+                }
+            } catch {
+                print("Data not accessed.")
+            }
+        } else {
+            print("fail")
         }
+        for i in 0..<fileString.count {
+            createItem(filename: fileString[i])
+        }
+//        for _ in 0..<15 {
+//            createItem(filename: "test")
+//            //print("here")
+//        }
     }
 }
