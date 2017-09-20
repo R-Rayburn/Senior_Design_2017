@@ -55,7 +55,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         print("MapViewController loaded its view.")
     }
     
-    func mapTypeChanged(_ segControl: UISegmentedControl){
+    @objc func mapTypeChanged(_ segControl: UISegmentedControl){
         switch segControl.selectedSegmentIndex {
         case 0:
             mapView.mapType = .standard
@@ -88,7 +88,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         localizationButton.addTarget(self, action: #selector(MapViewController.showLocalization(sender:)), for: .touchUpInside)
     }
     
-    func showLocalization(sender: UIButton!){
+    @objc func showLocalization(sender: UIButton!){
         locationManager?.requestWhenInUseAuthorization()
         mapView.showsUserLocation = true //fire up the method mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation)
     }
