@@ -14,29 +14,8 @@ class ItemStore {
     var arrayClients = [[String:String]]() // do not use NSMutableArray in Swift
     var dictClients = [String:String]()
     
-    @discardableResult func createItem(filename: String) -> Item {
-        var fileString = [String]()
-        if let asset = NSDataAsset(name: filename) {
-            let data = asset.data
-            
-            // From https://stackoverflow.com/questions/41822966/how-do-you-read-data-from-a-text-file-in-swift-3-xcode-8
-            do {
-                let attibutedString = try NSAttributedString(data: data, documentAttributes: nil)
-                
-                let fullText = attibutedString.string
-                let readings = fullText.components(separatedBy: CharacterSet.newlines)
-                for line in readings {
-                    let clientData = line.components(separatedBy: "\n")
-                    fileString.append(clientData[0])
-                }
-            } catch {
-                print("Data not accessed.")
-            }
-        } else {
-            print("fail")
-        }
-        
-        let newItem = Item(name: fileString[0], info: fileString[1])
+    @discardableResult func createItem(name: String, info: String) -> Item {
+        let newItem = Item(name: name, info: info)
         
         allItems.append(newItem)
         
@@ -45,16 +24,22 @@ class ItemStore {
     
     init() {
         var fileString = [String]()
-        if let asset = NSDataAsset(name: "FileNames") {
+        if let asset = NSDataAsset(name: "exhibits1") {
             let data = asset.data
+            // Parts of this are from https://stackoverflow.com/questions/41822966/how-do-you-read-data-from-a-text-file-in-swift-3-xcode-8
             do {
                 let attibutedString = try NSAttributedString(data: data, documentAttributes: nil)
                 
                 let fullText = attibutedString.string
                 let readings = fullText.components(separatedBy: CharacterSet.newlines)
+                var i = 0
                 for line in readings {
                     let clientData = line.components(separatedBy: "\n")
                     fileString.append(clientData[0])
+                    if i % 2 == 1 {
+                        createItem(name: fileString[i-1], info: fileString[i])
+                    }
+                    i += 1
                 }
             } catch {
                 print("Data not accessed.")
@@ -62,9 +47,9 @@ class ItemStore {
         } else {
             print("fail")
         }
-        for i in 0..<fileString.count {
-            createItem(filename: fileString[i])
-        }
+//        for i in 0..<fileString.count {
+//            createItem(filename: fileString[i])
+//        }
 //        for _ in 0..<15 {
 //            createItem(filename: "test")
 //            //print("here")
