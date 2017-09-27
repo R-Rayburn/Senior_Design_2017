@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U2i-K2-3VV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U2i-K2-3VV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dIh-3s-lSq" id="Usg-ua-Ne0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -84,25 +84,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rotating-Exhibit-Image" translatesAutoresizingMaskIntoConstraints="NO" id="zJq-i4-sqw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xl-k5-EoL">
-                                <rect key="frame" x="33" y="100" width="309" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="33" y="144" width="309" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u1B-TG-49h">
-                                <rect key="frame" x="33" y="129" width="309" height="750"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="33" y="177.5" width="309" height="750"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="750" id="Ooy-yn-uAd"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="9nK-2d-298" firstAttribute="top" secondItem="zJq-i4-sqw" secondAttribute="bottom" id="186-F8-u5n"/>
+                            <constraint firstAttribute="trailing" secondItem="zJq-i4-sqw" secondAttribute="trailing" id="5Eh-o1-JE7"/>
+                            <constraint firstItem="zJq-i4-sqw" firstAttribute="top" secondItem="UyP-re-xd6" secondAttribute="bottom" id="CYM-rp-iCG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="u1B-TG-49h" secondAttribute="trailing" constant="17" id="Cjg-0n-j1Z"/>
                             <constraint firstItem="1Xl-k5-EoL" firstAttribute="top" secondItem="UyP-re-xd6" secondAttribute="bottom" constant="80" id="L2p-jg-iU8"/>
                             <constraint firstItem="u1B-TG-49h" firstAttribute="top" secondItem="1Xl-k5-EoL" secondAttribute="bottom" constant="8" id="Mfo-wg-t9j"/>
@@ -110,10 +115,12 @@
                             <constraint firstItem="u1B-TG-49h" firstAttribute="top" secondItem="1Xl-k5-EoL" secondAttribute="bottom" constant="8" id="UeM-g5-df1"/>
                             <constraint firstItem="u1B-TG-49h" firstAttribute="leading" secondItem="sue-UI-OFU" secondAttribute="leadingMargin" constant="17" id="dJF-XH-Ykc"/>
                             <constraint firstItem="1Xl-k5-EoL" firstAttribute="leading" secondItem="sue-UI-OFU" secondAttribute="leadingMargin" constant="17" id="gte-EQ-Sft"/>
+                            <constraint firstItem="zJq-i4-sqw" firstAttribute="leading" secondItem="sue-UI-OFU" secondAttribute="leading" id="lOx-aR-PAq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Xl-k5-EoL" secondAttribute="trailing" constant="17" id="t6R-v0-mr1"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bgImage" destination="zJq-i4-sqw" id="GJS-Cf-rDX"/>
                         <outlet property="infoText" destination="u1B-TG-49h" id="WoO-MP-m6J"/>
                         <outlet property="nameLabel" destination="1Xl-k5-EoL" id="4sD-lH-ncQ"/>
                     </connections>
@@ -148,7 +155,7 @@
                     <tabBarItem key="tabBarItem" title="Library" id="4Yl-79-Nnd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2pf-dV-Wgg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -161,4 +168,7 @@
             <point key="canvasLocation" x="1518" y="-773"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Rotating-Exhibit-Image" width="309" height="222"/>
+    </resources>
 </document>
