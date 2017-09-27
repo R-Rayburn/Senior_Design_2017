@@ -22,7 +22,8 @@ class DescriptionViewController: UIViewController {
                 
         nameLabel.text = item.name
         infoText.text = item.info
-        bgImage.alpha = 0.6
+        bgImage.image = item.image
+        bgImage.alpha = 0.4
     }
 
 }
