@@ -84,17 +84,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rotating-Exhibit-Image" translatesAutoresizingMaskIntoConstraints="NO" id="zJq-i4-sqw">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xl-k5-EoL">
                                 <rect key="frame" x="33" y="144" width="309" height="25.5"/>
+                                <color key="backgroundColor" red="0.3294117647" green="0.48498883929999997" blue="0.71576450889999998" alpha="0.67759683100000001" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u1B-TG-49h">
                                 <rect key="frame" x="33" y="177.5" width="309" height="750"/>
+                                <color key="backgroundColor" red="0.3294117647" green="0.48498883929999997" blue="0.71576450889999998" alpha="0.67759683100000001" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="750" id="Ooy-yn-uAd"/>
                                 </constraints>
@@ -105,9 +104,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9nK-2d-298" firstAttribute="top" secondItem="zJq-i4-sqw" secondAttribute="bottom" id="186-F8-u5n"/>
-                            <constraint firstAttribute="trailing" secondItem="zJq-i4-sqw" secondAttribute="trailing" id="5Eh-o1-JE7"/>
-                            <constraint firstItem="zJq-i4-sqw" firstAttribute="top" secondItem="UyP-re-xd6" secondAttribute="bottom" id="CYM-rp-iCG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="u1B-TG-49h" secondAttribute="trailing" constant="17" id="Cjg-0n-j1Z"/>
                             <constraint firstItem="1Xl-k5-EoL" firstAttribute="top" secondItem="UyP-re-xd6" secondAttribute="bottom" constant="80" id="L2p-jg-iU8"/>
                             <constraint firstItem="u1B-TG-49h" firstAttribute="top" secondItem="1Xl-k5-EoL" secondAttribute="bottom" constant="8" id="Mfo-wg-t9j"/>
@@ -115,12 +111,10 @@
                             <constraint firstItem="u1B-TG-49h" firstAttribute="top" secondItem="1Xl-k5-EoL" secondAttribute="bottom" constant="8" id="UeM-g5-df1"/>
                             <constraint firstItem="u1B-TG-49h" firstAttribute="leading" secondItem="sue-UI-OFU" secondAttribute="leadingMargin" constant="17" id="dJF-XH-Ykc"/>
                             <constraint firstItem="1Xl-k5-EoL" firstAttribute="leading" secondItem="sue-UI-OFU" secondAttribute="leadingMargin" constant="17" id="gte-EQ-Sft"/>
-                            <constraint firstItem="zJq-i4-sqw" firstAttribute="leading" secondItem="sue-UI-OFU" secondAttribute="leading" id="lOx-aR-PAq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Xl-k5-EoL" secondAttribute="trailing" constant="17" id="t6R-v0-mr1"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bgImage" destination="zJq-i4-sqw" id="GJS-Cf-rDX"/>
                         <outlet property="infoText" destination="u1B-TG-49h" id="WoO-MP-m6J"/>
                         <outlet property="nameLabel" destination="1Xl-k5-EoL" id="4sD-lH-ncQ"/>
                     </connections>
@@ -168,7 +162,4 @@
             <point key="canvasLocation" x="1518" y="-773"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Rotating-Exhibit-Image" width="309" height="222"/>
-    </resources>
 </document>

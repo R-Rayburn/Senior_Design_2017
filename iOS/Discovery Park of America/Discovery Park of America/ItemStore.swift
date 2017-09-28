@@ -14,8 +14,8 @@ class ItemStore {
     var arrayClients = [[String:String]]() // do not use NSMutableArray in Swift
     var dictClients = [String:String]()
     
-    @discardableResult func createItem(name: String, info: String) -> Item {
-        let newItem = Item(name: name, info: info)
+    @discardableResult func createItem(name: String, info: String, picture: String) -> Item {
+        let newItem = Item(name: name, info: info, picture: picture)
         
         allItems.append(newItem)
         
@@ -36,8 +36,8 @@ class ItemStore {
                 for line in readings {
                     let clientData = line.components(separatedBy: "\n")
                     fileString.append(clientData[0])
-                    if i % 2 == 1 {
-                        createItem(name: fileString[i-1], info: fileString[i])
+                    if i % 3 == 2 {
+                        createItem(name: fileString[i-2], info: fileString[i-1], picture: fileString[i])
                     }
                     i += 1
                 }
@@ -47,12 +47,5 @@ class ItemStore {
         } else {
             print("fail")
         }
-//        for i in 0..<fileString.count {
-//            createItem(filename: fileString[i])
-//        }
-//        for _ in 0..<15 {
-//            createItem(filename: "test")
-//            //print("here")
-//        }
     }
 }

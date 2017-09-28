@@ -13,10 +13,10 @@ class Item: NSObject {
     var info: String
     var image: UIImage
     
-    init(name: String, info: String){
+    init(name: String, info: String, picture: String){
         self.name = name
         self.info = info
-        self.image = UIImage(named: "Energy")!
+        self.image = UIImage(named: picture)!
         
         super.init()
     }
