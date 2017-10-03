@@ -12,7 +12,11 @@ import CoreLocation
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
+    
+    //Sets the beacon region by giving the uuid that the beacon produces and a name for the beacon.
     let region = CLBeaconRegion(proximityUUID: NSUUID(uuidString: "2B162531-FD29-4758-85B4-555A6DFF00FF")! as UUID, identifier: "Beacon_01")
+    
+    let colors = [63449: UIColor(red:84/255, green: 77/255, blue: 160/255, alpha:1)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +29,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    private func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [AnyObject], in region: CLBeaconRegion) {
+        let knownBeacons = beacons.filter{ $0.proximity != CLProximity.unknown}
+        if(knownBeacons.count > 0) {
+            let closestBeacon = knownBeacons[0] as! CLBeacon
+            self.view.backgroundColor = self.colors[closestBeacon.minor.intValue]
+        }
+        //print(beacons)
     }
     
     /*    var mapView: MKMapView!
