@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9406B9501F86C2BB008F328A /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9406B94F1F86C2BB008F328A /* LibraryCell.swift */; };
 		944593C71F5A05AF000B7FE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944593C61F5A05AF000B7FE6 /* AppDelegate.swift */; };
 		944593CC1F5A05AF000B7FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944593CA1F5A05AF000B7FE6 /* Main.storyboard */; };
 		944593D11F5A05AF000B7FE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944593CF1F5A05AF000B7FE6 /* LaunchScreen.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9406B94F1F86C2BB008F328A /* LibraryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
 		944593C31F5A05AF000B7FE6 /* Discovery Park of America.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Discovery Park of America.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		944593C61F5A05AF000B7FE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		944593CB1F5A05AF000B7FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				94B5BD7D1F62EF800015AB33 /* DescriptionViewController.swift */,
 				94BA06581F6C25DE00822402 /* Item.swift */,
 				94BA065A1F6C278C00822402 /* ItemStore.swift */,
+				9406B94F1F86C2BB008F328A /* LibraryCell.swift */,
 				944593CA1F5A05AF000B7FE6 /* Main.storyboard */,
 				94C9BD761F6F13670053655F /* Assets.xcassets */,
 				944593CF1F5A05AF000B7FE6 /* LaunchScreen.storyboard */,
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94B5BD7E1F62EF800015AB33 /* DescriptionViewController.swift in Sources */,
+				9406B9501F86C2BB008F328A /* LibraryCell.swift in Sources */,
 				94C42BE51F5F479800736AC6 /* MapViewController.swift in Sources */,
 				944593C71F5A05AF000B7FE6 /* AppDelegate.swift in Sources */,
 				94BA06591F6C25DE00822402 /* Item.swift in Sources */,
@@ -400,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -451,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
