@@ -4,7 +4,7 @@
 //
 //  Created by Paul Gosser on 9/5/17.
 //  Copyright © 2017 Paul Gosser. All rights reserved.
-// WHat the heck
+// WHat the heck is this crap
 
 import UIKit
 import CoreLocation
