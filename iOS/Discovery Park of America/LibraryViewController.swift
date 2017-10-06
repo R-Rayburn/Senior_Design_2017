@@ -17,7 +17,7 @@ class LibraryViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LibraryCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LibraryCell", for: indexPath) as! LibraryCell
         //let cell = UITableViewCell(style: .value1, reuseIdentifier: "LibraryCell")
         
         // Set the text on the cell with the description of the item
@@ -27,9 +27,16 @@ class LibraryViewController: UITableViewController {
         
         // Configure the cell with the item
         //cell.nameLabel.text = item.name
-        cell.textLabel?.text = item.name
+        //cell.textLabel?.text = item.name
+        cell.name.text = item.name
         
         return cell
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.rowHeight = 75
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
