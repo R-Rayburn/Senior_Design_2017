@@ -33,6 +33,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(segmentedControl)
         
+        // Change this eventually.
         let topConstraint = segmentedControl.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 8)
         
         let margins = view.layoutMarginsGuide
