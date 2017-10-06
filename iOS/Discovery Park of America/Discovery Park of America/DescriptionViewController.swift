@@ -22,10 +22,12 @@ class DescriptionViewController: UIViewController {
                 
         nameLabel.text = item.name
         infoText.text = item.info
-        //item.image.alpha
         self.view.backgroundColor = UIColor(patternImage: item.image)
         
-        //self.view.backgroundColor = UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.5)
+//        let scrollView = UIScrollView(frame: view.bounds)
+//        scrollView.contentSize = infoText.bounds.size
+//        scrollView.addSubview(infoText)
+//        view.addSubview(scrollView)
         
         //bgImage.alpha = 0.4
     }
